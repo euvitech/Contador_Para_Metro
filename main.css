@@ -55,8 +55,13 @@ button {
     margin-top: 4rem;
 }
 
-.button button:nth-child(2), button:nth-child(3) {
+
+.button button {
     margin-left: 1rem;
+}
+
+.button button:nth-child(1){
+    margin-left: 0rem;
 }
 
 button:hover {

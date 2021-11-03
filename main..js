@@ -11,9 +11,11 @@ function decrement() {
     res.innerHTML = `${count}`
 }
 
-
 function reset() {
     count = 0
     res.innerHTML = `${count}`
 }
 
+function save() {
+    console.log(count)
+}
