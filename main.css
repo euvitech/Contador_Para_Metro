@@ -42,7 +42,9 @@ button {
 
     border: none;
     border-radius: .4rem;
+
     padding: 1rem 3rem;
+    
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
@@ -53,6 +55,8 @@ button {
 
 .button {
     margin-top: 4rem;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -60,10 +64,39 @@ button {
     margin-left: 1rem;
 }
 
-.button button:nth-child(1){
-    margin-left: 0rem;
-}
+
 
 button:hover {
     opacity: .9;
+}
+
+.count-save {
+    margin-top: 2rem;
+}
+
+.count-save h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+#res-save {
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+
+    margin: 2rem 12vw;
+}
+
+@media screen and (max-width: 425px) {
+    .button {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button button {
+        margin-top: 4vw;
+    }
 }
